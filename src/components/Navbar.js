@@ -4,11 +4,11 @@ export default class Navbar extends Component {
   render() {
     return (
       <nav>
-        <div style={{ backgroundColor: "#222121" }} class="nav-wrapper">
-          <a href="#" class="brand-logo center">
+        <div style={{ backgroundColor: "#222121" }} className="nav-wrapper">
+          <a href="/" className="brand-logo center">
             Chocolate City
           </a>
-          <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <ul id="nav-mobile" className="left hide-on-med-and-down">
             <li>
               <a href="sass.html">Sass</a>
             </li>

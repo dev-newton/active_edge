@@ -10,7 +10,7 @@ class App extends Component {
       <BrowserRouter>
         <Navbar />
         <Route exact path="/" component={ArtistList} />
-        <Route exact path="/artist/:id" component={ArtistAlbums} />
+        <Route exact path="/artist/albums/:id" component={ArtistAlbums} />
       </BrowserRouter>
     );
   }

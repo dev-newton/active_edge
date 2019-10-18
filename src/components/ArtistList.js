@@ -21,19 +21,19 @@ class ArtistList extends Component {
 
   render() {
     return (
-      <ul class="collection with-header">
-        <li class="collection-header">
+      <ul className="collection with-header">
+        <li className="collection-header">
           <h4>List of Artists</h4>
         </li>
         {this.state.artists.map(artist => {
           return (
-            <Link to={`/artist/${artist.id}`} key={artist.id}>
-              <li class="collection-item">
+            <Link to={`/artist/albums/${artist.id}`} key={artist.id}>
+              <li className="collection-item">
                 <div>
                   {artist.name}
-                  <a href="#!" class="secondary-content">
-                    <i class="material-icons">chevron_right</i>
-                  </a>
+                  <div href="#!" className="secondary-content">
+                    <i className="material-icons">chevron_right</i>
+                  </div>
                 </div>
               </li>
             </Link>
