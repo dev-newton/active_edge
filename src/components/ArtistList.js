@@ -27,16 +27,19 @@ class ArtistList extends Component {
         </li>
         {this.state.artists.map(artist => {
           return (
-            <Link to={`/artist/albums/${artist.id}`} key={artist.id}>
-              <li className="collection-item">
-                <div>
-                  {artist.name}
-                  <div href="#!" className="secondary-content">
-                    <i className="material-icons">chevron_right</i>
+            <div key={artist.id} class="row">
+              <div class="col s12 m6">
+                <div class="card  darken-1">
+                  <div class="card-content dark-text">
+                    <span class="card-title">{artist.name}</span>
+                  </div>
+                  <div class="card-action">
+                    <Link to={`/artist/albums/${artist.id}`}>View Albums</Link>
+                    <Link to={`/artist/tweets/${artist.id}`}>View Tweets</Link>
                   </div>
                 </div>
-              </li>
-            </Link>
+              </div>
+            </div>
           );
         })}
       </ul>

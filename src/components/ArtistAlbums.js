@@ -39,9 +39,6 @@ class ArtistAlbums extends Component {
                   <div className="card-content">
                     <span className="card-title">{album.title}</span>
                   </div>
-                  <div className="card-action">
-                    <Link to="/">View Tweets</Link>
-                  </div>
                 </div>
               </div>
             </div>
