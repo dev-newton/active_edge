@@ -32,7 +32,7 @@ class ArtistList extends Component {
                 <div>
                   {artist.name}
                   <a href="#!" class="secondary-content">
-                    <i class="material-icons">send</i>
+                    <i class="material-icons">chevron_right</i>
                   </a>
                 </div>
               </li>
